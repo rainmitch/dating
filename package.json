@@ -2,7 +2,7 @@
   "name": "dating",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://rainmitch.github.io/dating",
+  "homepage": "https://rainmitch.github.io/dating",
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
