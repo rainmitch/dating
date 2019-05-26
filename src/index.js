@@ -19,9 +19,9 @@ ReactDOM.render(
 				<NavbarEntry link="./">Home</NavbarEntry>
 			</Navbar>
 			<Switch>
-				<Route path="/dating">
+				<Route path="/">
 					<Switch>
-						<Route exact path="/dating" component={Home}/>
+						<Route exact path="/" component={Home}/>
 						<Route component={Error} />
 					</Switch>
 				</Route>
