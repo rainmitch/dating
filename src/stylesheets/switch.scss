@@ -1,0 +1,56 @@
+
+@import "global.scss";
+
+.Switch
+{
+	display: inline-block;
+	position: relative;
+	width: 64px;
+	height: 24px;
+	margin: 5px;
+	margin-top: 12px;
+}
+
+.SwitchBackground
+{
+	position: relative;
+	
+	left: 12px;
+	top: 8px;
+	
+	width: 40px;
+	height: 8px;
+	
+	background-color: $Theme-1;
+}
+
+.SwitchBulb
+{
+	display: inline-block;
+	position: relative;
+	
+	top:-8px;
+	
+	width: 24px;
+	height: 24px;
+	
+	border-radius: 50%;
+	
+	background-color: $Theme-1-light;
+}
+
+.SwitchBulbOff
+{
+	transition: 0.5s;
+	transform: translateX(0px);
+	background-color: $Theme-1-light;
+}
+
+.SwitchBulbOn
+{
+	transition: 0.5s;
+	transform: translateX(40px);
+	background-color: $Theme-2-light;
+	
+	@include MaterialShadow (3);
+}

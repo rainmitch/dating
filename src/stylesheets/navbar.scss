@@ -1,0 +1,219 @@
+
+@import "global.scss";
+
+$navbar-colour: #282828;
+
+.Navbar
+{
+	display: flex;
+	alignItems: center;
+	position: absolute;
+	width: 100%;
+	height: 64px;
+	
+	@include MaterialShadow (4);
+	/*box-shadow: 5px 3px 5px 5px #888888;*/
+}
+
+.RegularBar
+{
+	background: 	linear-gradient(to bottom, $navbar-colour 0%, $navbar-colour 100%),
+					linear-gradient(to right, #e91e63 0%, #e91e63 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.GayBar
+{
+	background: 	linear-gradient(to bottom, $navbar-colour 0%, $navbar-colour 100%),
+					linear-gradient(to right, #E70000 0%, #E70000 16.67%,
+							#FF8C00 16.67%, #FF8C00 33.34%, #FFEF00 33.34%,
+							#FFEF00 50%, #00811F 50%, #00811F 66.67%, #0044FF 66.67%,
+							#0044FF 83.34%, #760089 83.34%, #760089 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.BiBar
+{
+	background: 	linear-gradient(to bottom, $navbar-colour 0%, $navbar-colour 100%),
+					linear-gradient(to right, #D9006F 0%, #D9006F 40%,#744D98 40%,
+							#744D98 60%, #0033AB 60%, #0033AB 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.PanBar
+{
+	background: 	linear-gradient(to bottom, $navbar-colour 0%, $navbar-colour 100%),
+					linear-gradient(to right, #FF148C 0%, #FF148C 33.34%,
+							#FFDA00 33.34%, #FFDA00 66.67%, #05AEFF 66.67%,
+							#05AEFF 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.AceBar
+{
+	background: 	linear-gradient(to bottom, $navbar-colour 0%, $navbar-colour 100%),
+					linear-gradient(to right, #000000 0%, #000000 25%, #A3A3A3 25%,
+							#A3A3A3 50%, #FFFFFF 50%, #FFFFFF 75%, #810082 75%,
+							#810082 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.LesBar
+{
+	background: 	linear-gradient(to bottom, $navbar-colour 0%, $navbar-colour 100%),
+					linear-gradient(to right, #A40061 0%, #A40061 20%, #B75592 20%,
+							#B75592 40%, #ECECEA 40%, #ECECEA 60%, #C44E55 60%,
+							#C44E55 80%, #8A1E04 80%, #8A1E04 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.TransBar
+{
+	background: 	linear-gradient(to bottom, #282828 0%, #282828 100%),
+					linear-gradient(to right, #55CDFC 0%, #55CDFC 20%, #F7A8B8 20%,
+							#F7A8B8 40%, #FFFFFF 40%, #FFFFFF 60%, #F7A8B8 60%,
+							#F7A8B8 80%, #55CDFC 80%, #55CDFC 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.NoBinaryBar
+{
+	background: 	linear-gradient(to bottom, #282828 0%, #282828 100%),
+					linear-gradient(to right, #FFF433 0%, #FFF433 25%,
+							#FFFFFF 25%, #FFFFFF 50%, #9B59D0 50%, #9B59D0 75%,
+							#2D2D2D 75%, #2D2D2D 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.GenderFluidBar /* The Tastiest Drink and the best bar in town*/
+{
+	background: 	linear-gradient(to bottom, #282828 0%, #282828 100%),
+					linear-gradient(to right, #FB72BF 0%, #FB72BF 20%,
+							#FEFDFE 20%, #FEFDFE 40%, #D414DA 40%, #D414DA 60%,
+							#020202 60%, #020202 80%, #094EC5 80%, #094EC5 100%);
+	background-position: top, bottom;
+	background-size: 100% 75%, 100% 25%;
+	background-repeat: no-repeat;
+}
+
+.Navbar-Title
+{
+	display: inline-block;
+	position: relative;
+	left: 45px;
+	
+	line-height: 64px;
+	text-align: center;
+	
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.NavbarEntry
+{
+	display: inline-block;
+	position: relative;
+	
+	line-height: 48px;
+	left: 64px;
+	margin-left: 25px;
+	
+	
+	color: white;
+	text-decoration: none;
+}
+
+.Profile
+{
+	display: inline-block;
+	position: absolute;
+	
+	width:  32px;
+	height: 32px;
+	right: 30px;
+	top: 8px;
+	
+	border-radius: 50%;
+	content: url(../images/profile_icon.png);
+	
+	/*box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16),
+				4px 3px 6px rgba(0, 0, 0, 0.18);*/
+	@include MaterialShadow (6);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.Profile:hover
+{
+	@include MaterialShadow (8);
+	/*box-shadow: 2px 6px 14px rgba(0, 0, 0, 0.33),
+				4px 8px 16px rgba(0, 0, 0, 0.26);*/
+}
+
+.RenderProfileMenu
+{
+	position: absolute;
+	width: 210px;
+	
+	top: 32px;
+	right: 54px;
+	
+	background-color: white;
+	border: thin solid black;
+	
+	list-style: none;
+	
+	padding: 0px;
+	
+	z-index: 99;
+	@include MaterialShadow (6);
+}
+
+.RenderProfileMenu:hover
+{
+
+	transition: 1s;
+	left: 80%;
+}
+
+.NoRenderProfileMenu
+{
+	display: none;
+}
+
+.RenderProfileMenu > a
+{
+	position: relative;
+	float: left;
+	
+	width: 200px;
+	left: 5px;
+	
+	color: black;
+	text-decoration: none;
+	
+	border-bottom: thin solid grey;
+}
+
+
+.RenderProfileMenu > a:hover
+{
+	@include MaterialShadow (2);
+}
